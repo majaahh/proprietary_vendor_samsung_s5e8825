@@ -1,0 +1,16 @@
+# Firmware for model SM-A536N - from Samsung package version A536NKSSCFYH1
+
+fld.bin_SM-A536N|a685bfeedc51249b11e9443fac0f50c1ef9831f6
+harx.bin_SM-A536N|1339b5cb83d5a2c4e4eb49c3a4d4a782bbe9e1f8
+keystorage.bin_SM-A536N|411b0af311068d93547aed83981c0dc54e21ca85
+ldfw.img_SM-A536N|aee5d629f782db4ef7db0b0d25714517b016a543
+modem.bin_SM-A536N|bc268e231480aad5451be8c395d67d138b8a0859
+modem_debug.bin_SM-A536N|dc81c14cbbf3f90c308e17c224605e90b4342f81
+sboot.bin_SM-A536N|22a29d97fbfa3a769bef53658da826b297eff242
+tzar.img_SM-A536N|f43a48576a4571867796feeec355ff1c6bccf0b4
+tzsw.img_SM-A536N|9ab8359ac8b53e03bf91bad692d199e80963b694
+uh.bin_SM-A536N|260b2675991b26d08de70b659447f0c07e25becf
+up_param.bin_SM-A536N|e38a50cec3a9554d69a1f64a4d1bcab55aa83add
+
+# Files containing Samsung package version for supported models
+version_SM-A536N|694709123e9bb0ff786e0f4235e8b512c04651e0
