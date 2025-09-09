@@ -1,0 +1,16 @@
+# Firmware for model SM-A336E - from Samsung package version A336EDXSEFYH2
+
+fld.bin_SM-A336E|a9edc339466cf853711cdb5de5ac8a8a11a1bd76
+harx.bin_SM-A336E|4dc313c24e0c9ab4518ed6b37dfda0c75e61509f
+keystorage.bin_SM-A336E|bb6e401987676a024f7a188295f034d9f126754b
+ldfw.img_SM-A336E|a55b14836791ae0be858de544d4c11a5a71d77dc
+modem.bin_SM-A336E|f1623374c5f51b2e69c2fb78271b9ace66630201
+modem_debug.bin_SM-A336E|0a27973bdb809d512276776d5b7c96c7d1130008
+sboot.bin_SM-A336E|2d8a9f3b7cf1a54a60827bfd61e7edde35876af1
+tzar.img_SM-A336E|acd02c0666b58cc8c77adc6dbbbc85dfdbfc9fd2
+tzsw.img_SM-A336E|6396e2355b228a70802553a3275fa2d0f61ea7ca
+uh.bin_SM-A336E|4cc35bfc8455d7c14d405f053068b487c3f95cc0
+up_param.bin_SM-A336E|04ad47762aa9ced9566c4dc386d6b8454f277e6c
+
+# Files containing Samsung package version for supported models
+version_SM-A336E|a590b43f3d41efd9143a735c8a47e8bbcc1a7e3c
