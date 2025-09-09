@@ -116,7 +116,7 @@ jobs:
             serial: "R52X506ETTN"
 
     concurrency:
-      group: "update-${{ matrix.model }}-${{ matrix.csc }}"
+      group: "update-${{ matrix.model }}-${{ matrix.csc }}-${{ github.ref }}"
       cancel-in-progress: true
  
     steps:
