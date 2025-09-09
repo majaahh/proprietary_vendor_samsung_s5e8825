@@ -1,0 +1,16 @@
+# Firmware for model SM-A2560 - from Samsung package version A2560ZHS7CYG4
+
+fld.bin_SM-A2560|316f17e3bef6165df3927a167854504a9269e812
+harx.bin_SM-A2560|c5f47566c091221864e990276a6a72caa6d8cfb3
+keystorage.bin_SM-A2560|e243102903eecb737b9a518015645912e7f9054e
+ldfw.img_SM-A2560|291eecfcf2e8a8e1cf598d1e4542038b1302f94e
+modem.bin_SM-A2560|92c798716c8a06c477ba0a368fca015a1ca67559
+modem_debug.bin_SM-A2560|3b3057a60421cb57bd7e1509c71009f57f032367
+sboot.bin_SM-A2560|e5d5dc82bb8462d3964ea2f52525a358198f323b
+tzar.img_SM-A2560|1d67391c26dc5609a3cc901728390cf224cdb38f
+tzsw.img_SM-A2560|9fcc3f88b0b7a5678db15b0ee6faa67c8a2eb307
+uh.bin_SM-A2560|29994a086a0e3dcc3ff8a5467e316811750ca391
+up_param.bin_SM-A2560|41aaa6bcfe6be22c36148da3499345741e1ef2c7
+
+# Files containing Samsung package version for supported models
+version_SM-A2560|f5c16f0e9998ddc5e13636b1f2702862dc0974f9
