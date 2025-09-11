@@ -1,0 +1,12 @@
+# Firmware for model SM-A253Q - from Samsung package version A253QOPS1AYH2
+
+efuse.img_SM-A253Q|a7bef0c8ead701989cef164c94287f82a01ad655
+lk-verified.img_SM-A253Q|f768de5553e5f5359686aebd32827bdf55270354
+md1img.img_SM-A253Q|1f064deb2e9027f258670a451b5a453454427fc2
+param.bin_SM-A253Q|9682f12781b0120f44825da546a3ee4ea3506c64
+preloader.img_SM-A253Q|8b337447b37cf11776378d074dc4ab335d84a1cb
+uh.bin_SM-A253Q|15735a7dfe3c06c254b8a6b5304f7aefb117daae
+up_param.bin_SM-A253Q|af2ed21d72d58087f6e23210bd9931d59937c18a
+
+# Files containing Samsung package version for supported models
+version_SM-A253Q|2acb9e94d42c00d903514e2591f90606d380457f
