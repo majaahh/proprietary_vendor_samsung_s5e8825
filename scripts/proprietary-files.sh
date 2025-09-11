@@ -37,7 +37,7 @@ append_blobs() {
     for b in "${blobs[@]}"; do
         case "$mode" in
             plain)        append_blob "$b" "" "$sha" ;;
-            custom)       append_blob "$b" "vendor/firmware/${MODEL}/$b" "$sha" ;;
+            custom)       append_blob "$b" "vendor/firmware/$b" "$sha" ;;
             tee_plain)    echo "vendor/tee/$b${sha:+|$(sha1sum "$b" | awk '{print $1}')}" >> "$OUT" ;;
             tee_custom)   echo "vendor/tee/$b:vendor/tee/${MODEL}/$b${sha:+|$(sha1sum "$b" | awk '{print $1}')}" >> "$OUT" ;;
         esac
@@ -46,12 +46,14 @@ append_blobs() {
 }
 
 append_tee() {
-    local title="$1" mode="$2" sha="$3"
-    write_section "# $title - from ${MODEL} - ${LATEST_SHORTVERSION}"
+    local mode="$1"
+    write_section "# TEEgris firmware - from ${MODEL} - ${LATEST_SHORTVERSION}"
     find -type f | sed 's|^\./||' | sort | while read -r b; do
         case "$mode" in
-            plain)  echo "vendor/tee/$b${sha:+|$(sha1sum "$b" | awk '{print $1}')}" >> "$OUT" ;;
-            custom) echo "vendor/tee/$b:vendor/tee/${MODEL}/$b${sha:+|$(sha1sum "$b" | awk '{print $1}')}" >> "$OUT" ;;
+            plain)  echo "vendor/tee/$b" >> "$OUT" ;;
+            hash) echo "vendor/tee/$b${sha:+|$(sha1sum "$b" | awk '{print $1}')}" >> "$OUT" ;;
+            custom) echo "vendor/tee/${MODEL}/$b${sha:+|$(sha1sum "$b" | awk '{print $1}')}" >> "$OUT" ;;
+            move)  echo "vendor/tee/$b:vendor/tee/${MODEL}/$b" >> "$OUT" ;;
         esac
     done
 }
@@ -59,18 +61,25 @@ append_tee() {
 # Normal
 append_blobs "Audio Firmware"    plain 0  "" audio_blobs[@]
 append_blobs "Firmware"          plain 0  "" fw_blobs[@]
-cd ../tee && append_tee "TEEgris Firmware" plain 0
+cd ../tee && append_tee plain
 
 # With sha1sum
 echo "" >> "$OUT"
 cd ../firmware
 append_blobs "Audio Firmware"    plain 1 "" audio_blobs[@]
 append_blobs "Firmware"          plain 1 "" fw_blobs[@]
-cd ../tee && append_tee "TEEgris Firmware" plain 1
+cd ../tee && append_tee plain hash
 
 # Custom path
 echo "" >> "$OUT"
 cd ../firmware
-append_blobs "Audio Firmware"    custom 0 "" audio_blobs[@]
-append_blobs "Firmware"          custom 0 "" fw_blobs[@]
-cd ../tee && append_tee "TEEgris Firmware" custom 0
+append_blobs "Audio Firmware"    custom 1 "" audio_blobs[@]
+append_blobs "Firmware"          custom 1 "" fw_blobs[@]
+cd ../tee && append_tee custom
+
+# Custom path worse
+echo "" >> "$OUT"
+cd ../firmware
+append_blobs "Audio Firmware"    move 0 "" audio_blobs[@]
+append_blobs "Firmware"          move 0 "" fw_blobs[@]
+cd ../tee && append_tee move
