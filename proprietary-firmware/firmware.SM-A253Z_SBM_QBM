@@ -1,0 +1,12 @@
+# Firmware for model SM-A253Z - from Samsung package version A253ZSCS1AYH2
+
+efuse.img_SM-A253Z|f65ccc476221ca55f5fa0bacba51645a7578b5f6
+lk-verified.img_SM-A253Z|d580526fc013a6329578e277f5fa3cc8d2583ca0
+md1img.img_SM-A253Z|5b4bb35399b50aa0e9c14f9556d48eb147f0b2d4
+param.bin_SM-A253Z|0327a8cc2a3c5e0ff964b8c851560aeebd30f034
+preloader.img_SM-A253Z|aff6a9da10530a4faea04b5f8e5b2b167f7db955
+uh.bin_SM-A253Z|4ebba514bea2d42531564903c0a1b8a24e22f0ff
+up_param.bin_SM-A253Z|c70dad28dd484f674226cd819d99f68211337a9b
+
+# Files containing Samsung package version for supported models
+version_SM-A253Z|f092eb25ec490b476006fa6a17d680124353f469
