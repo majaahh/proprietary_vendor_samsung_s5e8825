@@ -1,0 +1,12 @@
+# Firmware for model SCG33 - from Samsung package version SCG33KDS1AYH2
+
+efuse.img_SCG33|288d19c3f4c06a7ae710b8d76c6bcdb8a7c4503a
+lk-verified.img_SCG33|70744df50baf51649c138bc2744b58ec576fabc0
+md1img.img_SCG33|c75fbd6e378898e8dbfacef613fd169e97aa194c
+param.bin_SCG33|664d7db333eb0d2e646249aafdcf04b38a7c1282
+preloader.img_SCG33|4bd1dc244b15cd977b13f0963de4528b6727371f
+uh.bin_SCG33|7aa1f09414ddd3147d13441a78b0196845ef7d6d
+up_param.bin_SCG33|60821c530554c74a771f9bd126b21d79d0e1920c
+
+# Files containing Samsung package version for supported models
+version_SCG33|f9967312f1470af6a0f7bc38716ba9f7d3f8c0cf
