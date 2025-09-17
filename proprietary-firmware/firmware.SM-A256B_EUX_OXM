@@ -1,0 +1,16 @@
+# Firmware for model SM-A256B - from Samsung package version A256BXXS8CYG4
+
+fld.bin_SM-A256B|3da3ae76133807ce4ff5543fb48e04980787b3cd
+harx.bin_SM-A256B|ac40ba8745b7ee8431a1a5d42cc5ee54d5ae2e68
+keystorage.bin_SM-A256B|bc52501063e3eb2e50005a7286ca1ad23db3b480
+ldfw.img_SM-A256B|350f7517b4b3aa363e614a4678b11e1dc9c51f23
+modem.bin_SM-A256B|29c3888203f970e0ddc94024e52488c9d4c8fd92
+modem_debug.bin_SM-A256B|0e54201ae91950a04360687e41d0c5f82dd14058
+sboot.bin_SM-A256B|3785b080d05c0ebf4c9d22f1ad14da3095b84e50
+tzar.img_SM-A256B|d5dc9c236982e6f6852e87677a9edd5943f630f1
+tzsw.img_SM-A256B|381a2a82189fbd687d0a8c278573e38da0f766d3
+uh.bin_SM-A256B|3ae4bfbc5bbd36cff8eacc062209d305410ddc03
+up_param.bin_SM-A256B|b643cdf03804b496d56744efdec5f267ac7521d0
+
+# Files containing Samsung package version for supported models
+version_SM-A256B|7b2841d9d84b520d64a0ec402d333cd51d77a598
