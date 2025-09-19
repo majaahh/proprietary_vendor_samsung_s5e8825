@@ -18,7 +18,7 @@ if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then
 fi
 
 # Commit
-echo "${LATEST_VERSION}" >> "current.${MODEL}_${CSC}_${OMC}"
+echo "${LATEST_VERSION}" > "current.${MODEL}_${CSC}_${OMC}"
 git add current.${MODEL}_${CSC}_${OMC}
 git add proprietary-files/proprietary.${MODEL}_${CSC}_${OMC}
 git add proprietary-firmware/firmware.${MODEL}_${CSC}_${OMC}
