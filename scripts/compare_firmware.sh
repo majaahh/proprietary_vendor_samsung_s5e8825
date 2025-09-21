@@ -1,5 +1,7 @@
+set -e
+
 UPDATE=0
-LATEST_FW=$(curl --fail --retry 20 --retry-delay 5 http://fota-cloud-dn.ospserver.net/firmware/${CSC}/${MODEL}/version.xml \
+LATEST_FW=$(curl --fail --retry 100 --retry-delay 5 http://fota-cloud-dn.ospserver.net/firmware/${CSC}/${MODEL}/version.xml \
   | grep latest | sed 's/^[^>]*>//' | sed 's/<.*//')
 LS=$(echo $LATEST_FW | cut -d'/' -f1)
 LC=$(echo $LATEST_FW | cut -d'/' -f2)
