@@ -1,4 +1,4 @@
-# Firmware for model SM-A536E - from Samsung package version 
+# Firmware for model SM-A536E - from Samsung package version A536EXXSHFYI1
 
 fld.bin_SM-A536E|1846aa6a0ef2169c6f16566859ba2e54248d9c26
 harx.bin_SM-A536E|098e388f73b585c3a2136ab123c56a224b79ccb4
@@ -13,4 +13,4 @@ uh.bin_SM-A536E|2190068f07adbfcdd7f2275ef844a35c9494f7a7
 up_param.bin_SM-A536E|ab5048b89b8c07b60504bf41527b4f4a5954e47f
 
 # Files containing Samsung package version for supported models
-version_SM-A536E|adc83b19e793491b1c6ea0fd8b46cd9f32e592fc
+version_SM-A536E|d175b5d747061c5b8d7fcf2914488044513bbbaa

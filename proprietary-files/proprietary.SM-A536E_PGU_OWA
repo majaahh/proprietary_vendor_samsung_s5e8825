@@ -1,15 +1,15 @@
-# Audio Firmware - from SM-A536E - 
+# Audio Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/firmware/APDV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/calliope_sram.bin
 vendor/firmware/vts.bin
 
-# Firmware - from SM-A536E - 
+# Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/firmware/NPU.bin
 vendor/firmware/mfc_fw.bin
 vendor/firmware/os.checked.bin
 
-# TEEgris Firmware - from SM-A536E - 
+# TEEgris Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081
 vendor/tee/00000000-0000-0000-0000-000000534b4d
@@ -48,18 +48,18 @@ vendor/tee/ffffffff-0000-0000-0000-000000000030
 vendor/tee/tui/resolution_common/ID00000100
 
 # With sha1sum
-# Audio Firmware - from SM-A536E - 
+# Audio Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/firmware/APDV_AUDIO_SLSI.bin|cef9e0703e66f6558ed222418142c7f8a7de7427
 vendor/firmware/AP_AUDIO_SLSI.bin|cfedf270210629341af3bd272ae72cc6bb29542e
 vendor/firmware/calliope_sram.bin|2ef4c8d874e74ee5efbc82db03a05bdc3dfdad4c
 vendor/firmware/vts.bin|59b7e2a71ba84625f92431980a3f68745e30c881
 
-# Firmware - from SM-A536E - 
+# Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/firmware/NPU.bin|1b1c59902e618bc9c7ada52cd622714baea7b161
 vendor/firmware/mfc_fw.bin|a0c2c9b23d0da4578c816a1882bb4cf6c5c796a5
 vendor/firmware/os.checked.bin|f358440ee774ba75d7ca2f822568f04336cf1e01
 
-# TEEgris Firmware - from SM-A536E - 
+# TEEgris Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/tee/00000000-0000-0000-0000-000000010081|2975edc075a75b7037b91958c79c309a17d9c92f
 vendor/tee/00000000-0000-0000-0000-000000020081|193f199a60ea689e3165bbaf9a8ed73b80a5021e
 vendor/tee/00000000-0000-0000-0000-000000534b4d|6c5c83703a36afd21500a086af4ef91d7031d2a7
@@ -98,18 +98,18 @@ vendor/tee/ffffffff-0000-0000-0000-000000000030|2730f43f6218bfe9d8f0d1b53dd314ff
 vendor/tee/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559d296a665d7b8d
 
 # With sha1sum and path to model
-# Audio Firmware - from SM-A536E - 
+# Audio Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/firmware/SM-A536E/APDV_AUDIO_SLSI.bin|cef9e0703e66f6558ed222418142c7f8a7de7427
 vendor/firmware/SM-A536E/AP_AUDIO_SLSI.bin|cfedf270210629341af3bd272ae72cc6bb29542e
 vendor/firmware/SM-A536E/calliope_sram.bin|2ef4c8d874e74ee5efbc82db03a05bdc3dfdad4c
 vendor/firmware/SM-A536E/vts.bin|59b7e2a71ba84625f92431980a3f68745e30c881
 
-# Firmware - from SM-A536E - 
+# Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/firmware/SM-A536E/NPU.bin|1b1c59902e618bc9c7ada52cd622714baea7b161
 vendor/firmware/SM-A536E/mfc_fw.bin|a0c2c9b23d0da4578c816a1882bb4cf6c5c796a5
 vendor/firmware/SM-A536E/os.checked.bin|f358440ee774ba75d7ca2f822568f04336cf1e01
 
-# TEEgris Firmware - from SM-A536E - 
+# TEEgris Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/tee/SM-A536E/00000000-0000-0000-0000-000000010081|2975edc075a75b7037b91958c79c309a17d9c92f
 vendor/tee/SM-A536E/00000000-0000-0000-0000-000000020081|193f199a60ea689e3165bbaf9a8ed73b80a5021e
 vendor/tee/SM-A536E/00000000-0000-0000-0000-000000534b4d|6c5c83703a36afd21500a086af4ef91d7031d2a7
@@ -148,18 +148,18 @@ vendor/tee/SM-A536E/ffffffff-0000-0000-0000-000000000030|2730f43f6218bfe9d8f0d1b
 vendor/tee/SM-A536E/tui/resolution_common/ID00000100|a091703ae478a3da9b16201f559d296a665d7b8d
 
 # With custom path
-# Audio Firmware - from SM-A536E - 
+# Audio Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/firmware/APDV_AUDIO_SLSI.bin:vendor/firmware/SM-A536E/APDV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin:vendor/firmware/SM-A536E/AP_AUDIO_SLSI.bin
 vendor/firmware/calliope_sram.bin:vendor/firmware/SM-A536E/calliope_sram.bin
 vendor/firmware/vts.bin:vendor/firmware/SM-A536E/vts.bin
 
-# Firmware - from SM-A536E - 
+# Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/firmware/NPU.bin:vendor/firmware/SM-A536E/NPU.bin
 vendor/firmware/mfc_fw.bin:vendor/firmware/SM-A536E/mfc_fw.bin
 vendor/firmware/os.checked.bin:vendor/firmware/SM-A536E/os.checked.bin
 
-# TEEgris Firmware - from SM-A536E - 
+# TEEgris Firmware - from SM-A536E - A536EXXSHFYI1
 vendor/tee/00000000-0000-0000-0000-000000010081:vendor/tee/SM-A536E/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081:vendor/tee/SM-A536E/00000000-0000-0000-0000-000000020081
 vendor/tee/00000000-0000-0000-0000-000000534b4d:vendor/tee/SM-A536E/00000000-0000-0000-0000-000000534b4d
