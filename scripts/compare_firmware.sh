@@ -5,8 +5,8 @@ LATEST_FW=$(curl --fail --retry 100 --retry-delay 5 http://fota-cloud-dn.ospserv
   | grep latest | sed 's/^[^>]*>//' | sed 's/<.*//')
 LS=$(echo $LATEST_FW | cut -d'/' -f1)
 LC=$(echo $LATEST_FW | cut -d'/' -f2)
-[[ -z "current.${MODEL}_${CSC}_${OMC}" ]] && UPDATE=1
-[[ "$UPDATE" != "true" ]] && CURRENT=$(cat current.${MODEL}_${CSC}_${OMC}) || UPDATE=1
+[[ -z "current/current.${MODEL}_${CSC}_${OMC}" ]] && UPDATE=1
+[[ "$UPDATE" != "true" ]] && CURRENT=$(cat current/current.${MODEL}_${CSC}_${OMC}) || UPDATE=1
 [[ $LATEST_FW != $CURRENT ]] && UPDATE=1
 
 echo "latest_version=$LATEST_FW" >> $GITHUB_ENV
