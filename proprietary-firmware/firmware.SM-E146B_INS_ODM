@@ -1,0 +1,18 @@
+# Firmware for model SM-E146B - from Samsung package version E146BXXS8DYG2
+
+dtp.bin_SM-E146B|8e4ca4a3629418eaf6bc799500f6941af1c9b779
+fld.bin_SM-E146B|acb588b48f3251e5e9cbb6d0ad8966f1acc9098e
+harx.bin_SM-E146B|32b6e6570abc0ee850adc78bf995b80ee7cd4377
+keystorage.bin_SM-E146B|6cd33245a4bcf9c56deaabc27ccdbd74d435e68b
+ldfw.img_SM-E146B|62961a56249e0a8362ae111e90d405da623817a8
+modem.bin_SM-E146B|eae7992b0e90dd9348d8ebc19cafc9161c0886c6
+modem_debug.bin_SM-E146B|1a29a9806708dba6c5e6d62d11403d21eac0d1ab
+sboot.bin_SM-E146B|bca8b8fb38bce20729521a7a184a3b611e31ed87
+ssp.img_SM-E146B|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
+tzar.img_SM-E146B|839cb16ec704e2c15a9d436abc69f71e53c10996
+tzsw.img_SM-E146B|2716d6b297fbf3062ed97e6b35f45ded6355fa87
+uh.bin_SM-E146B|09dd8f894e0a09938b22225118ca777e0b11390f
+up_param.bin_SM-E146B|6088b205eb24d10d17f0b25de63b69cad4cd1234
+
+# Files containing Samsung package version for supported models
+version_SM-E146B|b2349500e24a9189dec744f68c4fe7cecf29774c
