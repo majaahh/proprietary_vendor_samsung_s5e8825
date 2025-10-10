@@ -267,7 +267,9 @@ jobs:
           sudo apt-get remove --purge -y "php*" "dotnet*" "mysql*" "nodejs*" "clang*" "google*"
           sudo apt-get autoremove -y
           sudo apt-get clean
-          sudo rm -rf /usr/local
+          sudo docker image prune --all --force
+          sudo docker builder prune -a
+          sudo rm -rf /usr/share/dotnet /usr/local /opt/ghc /opt/hostedtoolcache/CodeQL
 
       - name: Extract kernel images
         if: env.update == 1
