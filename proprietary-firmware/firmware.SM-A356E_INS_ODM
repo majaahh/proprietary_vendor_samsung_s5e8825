@@ -1,0 +1,18 @@
+# Firmware for model SM-A356E - from Samsung package version A356EXXS5BYF3
+
+dtp.bin_SM-A356E|d3229f38715ae98618d7aa28674aae3977b91eba
+fld.bin_SM-A356E|843667aad52fe5947c27826936ab6374d1b3a2cb
+harx.bin_SM-A356E|8fa87183f696ee769eff081169e37b6c2669bdf3
+keystorage.bin_SM-A356E|b0537939d83f0ea22342ca335ee3f81896da995b
+ldfw.img_SM-A356E|bdf82196ff78d57206eed22a1689dc5ea39c52ee
+modem.bin_SM-A356E|e63534d6e0a69de0d7cb2ba32483b11815c1e451
+modem_debug.bin_SM-A356E|c698c106f16ea1e762f58779514c0f1267c11e9f
+sboot.bin_SM-A356E|a1e525a62774e96b4a47741e143429d43247a46a
+ssp.img_SM-A356E|90d29bcb1f48e1fb9c059f11f91a3b9abfe281dc
+tzar.img_SM-A356E|4b9b39c822075aea70f0a4369b4cf6ba11844d30
+tzsw.img_SM-A356E|22601f507b302de318ee3778a050756ed8392add
+uh.bin_SM-A356E|ced649b03e4b7357b4f6ac5d55fe86addb36b8b0
+up_param.bin_SM-A356E|73d15ee98abae9c0dba8e25a8634f1502943e0ed
+
+# Files containing Samsung package version for supported models
+version_SM-A356E|eafd7ffaf815fdd8f0973ff51c49f2e322445e7c
