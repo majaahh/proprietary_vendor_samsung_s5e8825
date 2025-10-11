@@ -27,7 +27,7 @@ generate_file_contexts() {
     done
 }
 
-[[ -f "file_context/file.${MODEL}_${CSC}_${OMC}" ]] && rm -f "file_context/file.${MODEL}_${CSC}_${OMC}"
+[[ ! -d "file_context/$BOARD" ]] && mkdir -p "file_context/$BOARD"
 
 {
     if ! sudo grep -q "m34" "vendor/mount/build.prop"; then
@@ -40,7 +40,7 @@ generate_file_contexts() {
     echo "/vendor/firmware/os\.checked\.bin u:object_r:vendor_fw_file:s0"
     echo "/vendor/firmware/vts\.bin u:object_r:vendor_fw_file:s0"
     generate_file_contexts "vendor/tee" "u:object_r:tee_file:s0"
-} >> "file_context/file.${MODEL}_${CSC}_${OMC}"
+} > "file_context/$BOARD/file.${MODEL}_${CSC}_${OMC}"
 
 mv vendor/tee vendor/tee_old
 mkdir -p vendor/tee/${MODEL}
@@ -60,7 +60,7 @@ cp -rfa vendor/tee_old/* vendor/tee/${MODEL}
     echo "/vendor/firmware/${MODEL}/os\.checked\.bin u:object_r:vendor_fw_file:s0"
     echo "/vendor/firmware/${MODEL}/vts\.bin u:object_r:vendor_fw_file:s0"
     generate_file_contexts "vendor/tee/${MODEL}" "u:object_r:tee_file:s0"
-} >> "file_context/file.${MODEL}_${CSC}_${OMC}"
+} >> "file_context/$BOARD/file.${MODEL}_${CSC}_${OMC}"
 
 rm -rf vendor/tee/${MODEL}
 cp -rfa vendor/tee_old/* vendor/tee

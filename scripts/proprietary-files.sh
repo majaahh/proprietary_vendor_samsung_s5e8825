@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 set -e
-propfile="../../proprietary-files/proprietary.${MODEL}_${CSC}_${OMC}"
+propfile="../../proprietary-files/$BOARD/proprietary.${MODEL}_${CSC}_${OMC}"
 audio_blobs=( "APDV_AUDIO_SLSI.bin" "AP_AUDIO_SLSI.bin" "calliope_sram.bin" "vts.bin" )
 fw_blobs=( "NPU.bin" "mfc_fw.bin" "os.checked.bin" )
 grep -q "SC-53C" "vendor/build.prop" && fw_blobs+=( "nfc/libsn100u_fw.so" )
 grep -q "m34" "vendor/build.prop" && audio_blobs=( "calliope_sram.bin" "vts.bin" )
+[[ ! -d "proprietary-files/$BOARD" ]] && mkdir -p "proprietary-files/$BOARD"
 
 cd vendor/firmware
 

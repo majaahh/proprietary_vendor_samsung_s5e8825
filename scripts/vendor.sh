@@ -19,5 +19,8 @@ sudo cp -fa -T vendor_mount vendor
 sudo chown -hR "$(whoami):$(whoami)" vendor
 sudo umount vendor_mount
 
+BOARD="$(grep -r "ro.product.board" vendor/build.prop | cut -d'=' -f2)"
+echo "board=$BOARD" >> "$GITHUB_ENV"
+
 zip -r9 ${LATEST_SHORTVERSION}_vendor-extracted.zip vendor
 rm -rf vendor_mount

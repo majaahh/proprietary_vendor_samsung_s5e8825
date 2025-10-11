@@ -14,19 +14,20 @@ echo "bl_lock=$BL_LOCK" >> "$GITHUB_ENV"
 
 rm -f "vbmeta.img"*
 
-[[ -f "../proprietary-firmware/firmware.${MODEL}_${CSC}_${OMC}" ]] && rm -f "../proprietary-firmware/firmware.${MODEL}_${CSC}_${OMC}"
+[[ ! -d "../proprietary-firmware/$BOARD" ]] && mkdir -p "../proprietary-firmware/$BOARD"
+propfile="../proprietary-firmware/$BOARD/firmware.${MODEL}_${CSC}_${OMC}"
 
 {
     echo "# Firmware for model ${MODEL} - from Samsung package version ${LATEST_SHORTVERSION}"
     echo ""
     sha1sum * | awk '{print $2 "|" $1}'
     echo ""
-} >> "../proprietary-firmware/firmware.${MODEL}_${CSC}_${OMC}"
+} > "$propfile"
 
 echo "${LATEST_SHORTVERSION}" >> "version_${MODEL}"
 {
     echo "# Files containing Samsung package version for supported models"
     sha1sum "version_${MODEL}" | awk '{print $2 "|" $1}'
-} >> "../proprietary-firmware/firmware.${MODEL}_${CSC}_${OMC}"
+} >> "$propfile"
 
 zip -r0 --store "../${LATEST_SHORTVERSION}_BL_CP-los.zip" .
