@@ -1,0 +1,17 @@
+# Firmware for model SM-S908B - from Samsung package version S908BXXUIGYI7
+
+fld.bin_SM-S908B|fac91f9724af5ac9ca0ba9f2c3ce9246e3f20e79
+harx.bin_SM-S908B|4392099684590cdd852f114be0a045c197105d6b
+keystorage.bin_SM-S908B|ab16575dd5bff6220fa250572ecf7df89c6725e1
+ldfw.img_SM-S908B|99f1088da835f51d68104824d3250dcf1ec03b3e
+modem.bin_SM-S908B|d4e623c905f43a45637810cb39eadd9bbbf9bcef
+modem_debug.bin_SM-S908B|8b7f8a1f98360fa3347f0111728a38230d861c69
+sboot.bin_SM-S908B|c9d80332fa0f0e1f57b3bb3373d48e4b042d7e4c
+ssp.img_SM-S908B|4dc4bb758a9ff5d7278d808c95812ea960197479
+tzar.img_SM-S908B|72c58b44c644dc9538fff19f409cd6918e26cad7
+tzsw.img_SM-S908B|671334c7ab27adf79dabbdd38d6104776e498327
+uh.bin_SM-S908B|6bb8a4f08866e0177ef2fb2d6a37f4bf42567109
+up_param.bin_SM-S908B|9171c9e0f9ba921b43bb71bb5c1e41b66d84027a
+
+# Files containing Samsung package version for supported models
+version_SM-S908B|d0760ee87e3ad4a94355bb11098768668cbad814
