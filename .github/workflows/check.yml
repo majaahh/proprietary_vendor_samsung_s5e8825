@@ -325,6 +325,7 @@ jobs:
         if: env.update == 1
         env:
           MODEL: ${{ matrix.model }}
+          BOARD: ${{ env.board }}
           OMC: ${{ matrix.omc }}
           CSC: ${{ matrix.csc }}
           LATEST_SHORTVERSION: ${{ env.latest_shortversion }}
@@ -335,6 +336,7 @@ jobs:
         if: env.update == 1
         env:
           MODEL: ${{ matrix.model }}
+          BOARD: ${{ env.board }}
           OMC: ${{ matrix.omc }}
           CSC: ${{ matrix.csc }}
           LATEST_SHORTVERSION: ${{ env.latest_shortversion }}
@@ -347,6 +349,7 @@ jobs:
         if: env.update == 1
         env:
           MODEL: ${{ matrix.model }}
+          BOARD: ${{ env.board }}
           CSC: ${{ matrix.csc }}
           OMC: ${{ matrix.omc }}
         run: |
@@ -356,6 +359,7 @@ jobs:
         if: env.update == 1
         env:
           MODEL: ${{ matrix.model }}
+          BOARD: ${{ env.board }}
           CSC: ${{ matrix.csc }}
           OMC: ${{ matrix.omc }}
         run: |
@@ -378,6 +382,7 @@ jobs:
         if: env.update == 1
         env:
           MODEL: ${{ matrix.model }}
+          BOARD: ${{ env.board }}
           OMC: ${{ matrix.omc }}
           CSC: ${{ matrix.csc }}
           LATEST_VERSION: ${{ env.latest_version }}
