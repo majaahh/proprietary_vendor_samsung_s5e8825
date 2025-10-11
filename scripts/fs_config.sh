@@ -22,20 +22,15 @@ generate_entries() {
     done
 }
 
-[[ -f "fs_config/fs.${MODEL}_${CSC}_${OMC}" ]] && rm -f "fs_config/fs.${MODEL}_${CSC}_${OMC}"
+BLOBS=( "calliope_sram.bin" "mfc_fw.bin" "NPU.bin" "os.checked.bin" "vts.bin" )
+! sudo grep -q "m34" "vendor/mount/build.prop" && BLOBS+=("AP_AUDIO_SLSI.bin" "APDV_AUDIO_SLSI.bin")
 
 {
-    if ! sudo grep -q "m34" "vendor/mount/build.prop"; then
-        echo "vendor/firmware/AP_AUDIO_SLSI.bin 0 0 644 capabilities=0x0"
-        echo "vendor/firmware/APDV_AUDIO_SLSI.bin 0 0 644 capabilities=0x0"
-    fi
-    echo "vendor/firmware/calliope_sram.bin 0 0 644 capabilities=0x0"
-    echo "vendor/firmware/mfc_fw.bin 0 0 644 capabilities=0x0"
-    echo "vendor/firmware/NPU.bin 0 0 644 capabilities=0x0"
-    echo "vendor/firmware/os.checked.bin 0 0 644 capabilities=0x0"
-    echo "vendor/firmware/vts.bin 0 0 644 capabilities=0x0"
+    for i in "${BLOBS}"; do
+        [[ -f "vendor/firmware/$i" ]] && echo "vendor/firmware/$i 0 0 644 capabilities=0x0"
+    done
     generate_entries "vendor/tee"
-} >> "fs_config/fs.${MODEL}_${CSC}_${OMC}"
+} > "fs_config/fs.${MODEL}_${CSC}_${OMC}"
 
 mkdir -p vendor/tee/${MODEL}
 cp -rfa vendor/tee_old/* vendor/tee/${MODEL}
@@ -44,14 +39,8 @@ cp -rfa vendor/tee_old/* vendor/tee/${MODEL}
     echo ""
     echo "# Custom Path"
     echo "vendor/firmware/${MODEL} 0 0 644 capabilities=0x0"
-    if ! sudo grep -q "m34" "vendor/mount/build.prop"; then
-        echo "vendor/firmware/${MODEL}/AP_AUDIO_SLSI.bin 0 0 644 capabilities=0x0"
-        echo "vendor/firmware/${MODEL}/APDV_AUDIO_SLSI.bin 0 0 644 capabilities=0x0"
-    fi
-    echo "vendor/firmware/${MODEL}/calliope_sram.bin 0 0 644 capabilities=0x0"
-    echo "vendor/firmware/${MODEL}/mfc_fw.bin 0 0 644 capabilities=0x0"
-    echo "vendor/firmware/${MODEL}/NPU.bin 0 0 644 capabilities=0x0"
-    echo "vendor/firmware/${MODEL}/os.checked.bin 0 0 644 capabilities=0x0"
-    echo "vendor/firmware/${MODEL}/vts.bin 0 0 644 capabilities=0x0"
+    for i in "${BLOBS}"; do
+        [[ -f "vendor/firmware/$i" ]] && echo "vendor/firmware/$MODEL/$i 0 0 644 capabilities=0x0"
+    done
     generate_entries "vendor/tee/${MODEL}"
 } >> "fs_config/fs.${MODEL}_${CSC}_${OMC}"
