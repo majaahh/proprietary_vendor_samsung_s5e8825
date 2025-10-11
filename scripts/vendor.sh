@@ -19,5 +19,5 @@ sudo cp -fa -T vendor_mount vendor
 sudo chown -hR "$(whoami):$(whoami)" vendor
 sudo umount vendor_mount
 
-zip -r0 --store ${LATEST_SHORTVERSION}_vendor-extracted.zip vendor
+zip -r9 ${LATEST_SHORTVERSION}_vendor-extracted.zip vendor
 rm -rf vendor_mount
