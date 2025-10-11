@@ -1,0 +1,18 @@
+# Firmware for model SM-A5560 - from Samsung package version A5560ZCSABYG2
+
+dtp.bin_SM-A5560|aee14d446af4b30a7b9d71c9da3080daf0bfc29e
+fld.bin_SM-A5560|f4189a112750834422b9974ca36c5991d9271ba9
+harx.bin_SM-A5560|999f78e9786f29a4b664312b877bfed842a69c35
+keystorage.bin_SM-A5560|5ed5f71a7e4cea6c85549218baf2234384c1e805
+ldfw.img_SM-A5560|55ce390a3bd73767c3caa67e32407294ec3d0766
+modem.bin_SM-A5560|8e3382666337938e9aad0420e1f5fe1a0c228875
+modem_debug.bin_SM-A5560|329d188b452a9796efb00ee4367fbfbd31da4f1c
+sboot.bin_SM-A5560|b6b3b39ad3792f9e59a14fda92cf07130420c53b
+sld.bin_SM-A5560|0c0adb55a4ccbeb602e6bcf9450ac66636931f24
+tzar.img_SM-A5560|ec288893f8d34fcac2a4b47fe051d525f4d6ef29
+tzsw.img_SM-A5560|4f15574be6f34bacd6e6b4d34cb9c9c27593d831
+uh.bin_SM-A5560|86ff40627e0c56091a70ebeb7cb30ff97b656fdb
+up_param.bin_SM-A5560|bbd68a495b807bf5908147e5fbef80d99b9ffb89
+
+# Files containing Samsung package version for supported models
+version_SM-A5560|9ebf1b3f13656176545af394c5fbb120d8512d7a
