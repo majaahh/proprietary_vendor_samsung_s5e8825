@@ -371,6 +371,12 @@ jobs:
         with:
           retain: 'compiler_cmake'
 
+      - name: Set Swap Space
+        if: env.update == 1
+        uses: pierotofy/set-swap-space@master
+        with:
+          swap-size-gb: 5
+
       - name: Extract kernel images
         if: env.update == 1
         env:
