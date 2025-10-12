@@ -15,7 +15,9 @@ mkdir -p vendor vendor_mount
 sudo mount vendor.img vendor_mount
 
 # https://github.com/salvogiangri/UN1CA/blob/fifteen/scripts/extract_fw.sh#L135-L136
-sudo cp -fa -T vendor_mount vendor
+for d in vendor_mount/*; do
+    sudo rsync -aHAX "$d" vendor/
+done
 sudo chown -hR "$(whoami):$(whoami)" vendor
 sudo umount vendor_mount
 
