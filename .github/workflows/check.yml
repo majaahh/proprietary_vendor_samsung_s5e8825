@@ -297,7 +297,7 @@ jobs:
           - model: "SM-X520"
             csc: "EUX"
             omc: "OXM"
-            imei: "R52Y307AKNH"
+            serial: "R52Y307AKNH"
           - model: "SM-X526B"
             csc: "EUX"
             omc: "OXM"
@@ -309,7 +309,7 @@ jobs:
           - model: "SM-X620"
             csc: "EUX"
             omc: "OXM"
-            imei: "R52Y307JRVF"
+            serial: "R52Y307JRVF"
 
     concurrency:
       group: "update-${{ matrix.model }}-${{ matrix.csc }}-${{ github.ref }}"
