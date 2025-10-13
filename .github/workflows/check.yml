@@ -383,7 +383,7 @@ jobs:
         if: env.update == 1
         uses: pierotofy/set-swap-space@master
         with:
-          swap-size-gb: 5
+          swap-size-gb: 20
 
       - name: Extract kernel images
         if: env.update == 1
