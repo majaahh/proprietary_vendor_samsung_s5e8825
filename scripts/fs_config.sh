@@ -26,12 +26,7 @@ BLOBS=( "calliope_sram.bin" "mfc_fw.bin" "NPU.bin" "os.checked.bin" "vts.bin" )
 ! sudo grep -q "m34" "vendor/mount/build.prop" && BLOBS+=("AP_AUDIO_SLSI.bin" "APDV_AUDIO_SLSI.bin")
 [[ ! -d "fs_config/$BOARD" ]] && mkdir -p "fs_config/$BOARD"
 
-{
-    for i in "${BLOBS}"; do
-        [[ -f "vendor/firmware/$i" ]] && echo "vendor/firmware/$i 0 0 644 capabilities=0x0"
-    done
-    generate_entries "vendor/tee"
-} > "fs_config/$BOARD/fs.${MODEL}_${CSC}_${OMC}"
+generate_entries "vendor/tee" > "fs_config/$BOARD/fs.${MODEL}_${CSC}_${OMC}"
 
 mkdir -p vendor/tee/${MODEL}
 cp -rfa vendor/tee_old/* vendor/tee/${MODEL}
@@ -40,8 +35,5 @@ cp -rfa vendor/tee_old/* vendor/tee/${MODEL}
     echo ""
     echo "# Custom Path"
     echo "vendor/firmware/${MODEL} 0 0 644 capabilities=0x0"
-    for i in "${BLOBS}"; do
-        [[ -f "vendor/firmware/$i" ]] && echo "vendor/firmware/$MODEL/$i 0 0 644 capabilities=0x0"
-    done
     generate_entries "vendor/tee/${MODEL}"
 } >> "fs_config/$BOARD/fs.${MODEL}_${CSC}_${OMC}"
