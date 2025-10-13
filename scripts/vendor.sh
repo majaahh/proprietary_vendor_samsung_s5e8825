@@ -14,10 +14,14 @@ zip ${LATEST_SHORTVERSION}_vendor.zip vendor.img
 mkdir -p vendor vendor_mount
 sudo mount vendor.img vendor_mount
 
-# https://github.com/salvogiangri/UN1CA/blob/fifteen/scripts/extract_fw.sh#L135-L136
-for d in vendor_mount/*; do
-    sudo rsync -aHAX "$d" vendor/
+(
+cd vendor_mount
+sudo find -xdev -type d -print0 | while IFS= read -r -d '' dir; do                                  
+   sudo mkdir -p "../vendor/${dir#$SRC/}"
 done
+sudo find -xdev -type f -print0 | sudo rsync -aHAX --no-inc-recursive --from0 --files-from=- . ../vendor/
+)
+# https://github.com/salvogiangri/UN1CA/blob/fifteen/scripts/extract_fw.sh#L135-L136
 sudo chown -hR "$(whoami):$(whoami)" vendor
 sudo umount vendor_mount
 
