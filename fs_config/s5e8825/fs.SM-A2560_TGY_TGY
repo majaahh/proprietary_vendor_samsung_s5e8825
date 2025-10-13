@@ -1,10 +1,4 @@
-vendor/firmware/AP_AUDIO_SLSI.bin 0 0 644 capabilities=0x0
-vendor/firmware/APDV_AUDIO_SLSI.bin 0 0 644 capabilities=0x0
 vendor/firmware/calliope_sram.bin 0 0 644 capabilities=0x0
-vendor/firmware/mfc_fw.bin 0 0 644 capabilities=0x0
-vendor/firmware/NPU.bin 0 0 644 capabilities=0x0
-vendor/firmware/os.checked.bin 0 0 644 capabilities=0x0
-vendor/firmware/vts.bin 0 0 644 capabilities=0x0
 vendor/tee 0 2000 755 capabilities=0x0
 vendor/tee/00000000-0000-0000-0000-000000010081 0 0 644 capabilities=0x0
 vendor/tee/00000000-0000-0000-0000-000000020081 0 0 644 capabilities=0x0
@@ -51,13 +45,7 @@ vendor/tee/tui/resolution_common/ID00000100 0 0 644 capabilities=0x0
 
 # Custom Path
 vendor/firmware/SM-A2560 0 0 644 capabilities=0x0
-vendor/firmware/SM-A2560/AP_AUDIO_SLSI.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A2560/APDV_AUDIO_SLSI.bin 0 0 644 capabilities=0x0
 vendor/firmware/SM-A2560/calliope_sram.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A2560/mfc_fw.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A2560/NPU.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A2560/os.checked.bin 0 0 644 capabilities=0x0
-vendor/firmware/SM-A2560/vts.bin 0 0 644 capabilities=0x0
 vendor/tee/SM-A2560 0 2000 755 capabilities=0x0
 vendor/tee/SM-A2560/00000000-0000-0000-0000-000000010081 0 0 644 capabilities=0x0
 vendor/tee/SM-A2560/00000000-0000-0000-0000-000000020081 0 0 644 capabilities=0x0
