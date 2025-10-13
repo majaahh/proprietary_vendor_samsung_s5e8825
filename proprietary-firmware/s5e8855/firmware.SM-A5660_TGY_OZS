@@ -1,18 +1,18 @@
-# Firmware for model SM-A5660 - from Samsung package version A5660ZHS6AYGE
+# Firmware for model SM-A5660 - from Samsung package version A5660ZHU6BYIC
 
-dtp.bin_SM-A5660|3b9bf114f58acea9a87f92deca07ffa2cc9a5417
-fld.bin_SM-A5660|7ea985b7a6067c0d6ce4357a44b7cb1553d8c723
-harx.bin_SM-A5660|edd00c6d154ceb5faa755138c29ccb0e1ef14155
-keystorage.bin_SM-A5660|2606d88cb4201d664a91c73f7055252e36748df5
-ldfw.img_SM-A5660|e23a8c341311fef5cda35454637ae8247fbeb085
-modem.bin_SM-A5660|cd2d35d38d325aa8b19c6688f952cf012535bcd8
-sboot.bin_SM-A5660|15fc37a6840d1ff713991c76afb084a30df518f4
-sld.bin_SM-A5660|ac5ca92fe2cf137019e5f4782c9223d5c52c7ead
-svm.bin_SM-A5660|60081e634f22c45b9597f3f45abb242fb4f14ee3
-tzar.img_SM-A5660|21a0d025f95a582e60e67b16f9d2a1189ffd866f
-tzsw.img_SM-A5660|214cd0e547bf01cb4864bff8019d12bd2a3ff539
-uh.bin_SM-A5660|358d30c587934667136aaa7e99448070849cba1e
-up_param.bin_SM-A5660|7c72dee3260e8a849b5451afa10a7f03390be22c
+dtp.bin_SM-A5660|3cb1a2fe1e53fe8ff4439409682c6fd910c1a788
+fld.bin_SM-A5660|af89b890af5fbe83ac5a0b026d15791d759dfaed
+harx.bin_SM-A5660|b16c89c365fe01a27ef4f7c2a65388db5d1c9e45
+keystorage.bin_SM-A5660|484467f7e849a6fa4ec6aaaebd50c0c90cb137f4
+ldfw.img_SM-A5660|0ef3ba34c932bcdd908536589e460bcfd394aa0a
+modem.bin_SM-A5660|8e68dfeef5becf3c3c62ae39d17ff7bbac867152
+sboot.bin_SM-A5660|82acd1dddc9ab285ce40d998b5fddab257e952a5
+sld.bin_SM-A5660|87a8aea1c94d05171e8643ac40cad98247c369cf
+svm.bin_SM-A5660|b690907c60b957b6ab3c96643e2b12556e842415
+tzar.img_SM-A5660|44c7b11380fd6c1d84b6035de1248ffb20723a60
+tzsw.img_SM-A5660|3a3074883fc8a0f799e05dc5d7d708edc2729556
+uh.bin_SM-A5660|0b7bebcf76d829c57b8d79155e6d5167731f6dd7
+up_param.bin_SM-A5660|ddc9e19ab8016f889266280546878150fab6fc1e
 
 # Files containing Samsung package version for supported models
-version_SM-A5660|aed315d23e1f2ba46e2fbc638f944773be6ee017
+version_SM-A5660|dd689dcf3d96bc953b2a461e84703dce2674a10d
