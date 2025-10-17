@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -e
 propfile="../../proprietary-files/$BOARD/proprietary.${MODEL}_${CSC}_${OMC}"
-audio_blobs=( "APDV_AUDIO_SLSI.bin" "AP_AUDIO_SLSI.bin" "calliope_sram.bin" "vts.bin" )
-fw_blobs=( "NPU.bin" "mfc_fw.bin" "os.checked.bin" )
-grep -q "SC-53C" "vendor/build.prop" && fw_blobs+=( "nfc/libsn100u_fw.so" )
-grep -q "m34" "vendor/build.prop" && audio_blobs=( "calliope_sram.bin" "vts.bin" )
+AUDIO_BLOBS=""
+FIRMWARE_BLOBS=""
+
 [[ ! -d "proprietary-files/$BOARD" ]] && mkdir -p "proprietary-files/$BOARD"
+[[ -f "configs/$BOARD.sh" ]] && source "configs/$BOARD.sh"
 
 cd vendor/firmware
 
@@ -108,28 +108,28 @@ append_tee_section_with_modelpath() {
     done
 }
 
-append_section_first "Audio - Firmware" "${audio_blobs[@]}"
-append_section "Firmware" "${fw_blobs[@]}"
+[[ -n "$AUDIO_BLOBS" ]] && append_section_first "Audio - Firmware" "${AUDIO_BLOBS[@]}"
+[[ -n "$FIRMWARE_BLOBS" ]] && append_section "Firmware" "${FIRMWARE_BLOBS[@]}"
 cd ../tee
 append_tee_section "Security - TEEgris - Firmware" "/"
 
 cd ../firmware
 echo -e "\n# With sha1sum" >> "$propfile"
-append_with_sha1 "Audio - Firmware" "${audio_blobs[@]}"
-append_with_sha1 "Firmware" "${fw_blobs[@]}"
+[[ -n "$AUDIO_BLOBS" ]] && append_with_sha1 "Audio - Firmware" "${AUDIO_BLOBS[@]}"
+[[ -n "$FIRMWARE_BLOBS" ]] && append_with_sha1 "Firmware" "${FIRMWARE_BLOBS[@]}"
 cd ../tee
 append_tee_section_with_sha1 "Security - TEEgris - Firmware" "/"
 
 cd ../firmware
 echo -e "\n# With sha1sum and path to model" >> "$propfile"
-append_with_modelpath_sha1 "Audio - Firmware" "${audio_blobs[@]}"
-append_with_modelpath_sha1 "Firmware" "${fw_blobs[@]}"
+[[ -n "$AUDIO_BLOBS" ]] && append_with_modelpath_sha1 "Audio - Firmware" "${AUDIO_BLOBS[@]}"
+[[ -n "$FIRMWARE_BLOBS" ]] && append_with_modelpath_sha1 "Firmware" "${FIRMWARE_BLOBS[@]}"
 cd ../tee
 append_tee_section_with_sha1 "Security - TEEgris - Firmware" "/${MODEL}/" "|$(sha1sum "$b" | awk '{print $1}')"
 
 cd ../firmware
 echo -e "\n# With custom path" >> "$propfile"
-append_with_custompath "Audio - Firmware" "${audio_blobs[@]}"
-append_with_custompath "Firmware" "${fw_blobs[@]}"
+[[ -n "$AUDIO_BLOBS" ]] && append_with_custompath "Audio - Firmware" "${AUDIO_BLOBS[@]}"
+[[ -n "$FIRMWARE_BLOBS" ]] && append_with_custompath "Firmware" "${FIRMWARE_BLOBS[@]}"
 cd ../tee
 append_tee_section_with_modelpath "Security - TEEgris - Firmware" "/" ":vendor/tee/${MODEL}/$b"
